@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Dariusz Masłyk — Analityk biznesowo-systemowy | Aplikacje mobilne, Comarch ERP, integracje</title>
+  <meta name="description" content="Dariusz Masłyk — analityk biznesowo-systemowy w Comarch (Comarch Mobile). Od chaosu wymagań, przez BPMN i UI/UX aplikacji mobilnych, po integrację z Comarch ERP, testy i diagnostykę.">
+  <meta name="theme-color" content="#eceff2">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://backloghero-lang.github.io/dariusz-maslyk/">
+  <meta property="og:image" content="https://backloghero-lang.github.io/dariusz-maslyk/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:image:alt" content="Dariusz Masłyk — analityk biznesowo-systemowy">
+  <meta property="og:locale" content="pl_PL">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="Dariusz Masłyk — Analityk biznesowo-systemowy">
+  <meta property="og:description" content="Zamieniam chaos wymagań w działający system. Aplikacje mobilne · Comarch ERP · Integracje.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.js" } }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+
+  <!-- Scena 3D: jedna warstwa w tle dla otwarcia i rozdziałów historii. -->
+  <div class="stage" id="stage" aria-hidden="true">
+    <div class="stage-host" id="scene-host"></div>
+    <svg class="stage-fallback" id="stage-fallback" viewBox="0 0 600 520">
+      <g class="f-wires">
+        <path d="M118 150C180 150 210 200 262 222M340 214C390 190 420 178 462 178M482 200C500 240 505 280 505 310M505 352C500 400 460 430 430 446M262 310C210 350 170 380 132 390M340 300C390 320 440 330 482 332"/>
+      </g>
+      <g class="f-phone"><rect x="248" y="150" width="104" height="200" rx="16"/><rect class="scr" x="258" y="168" width="84" height="162" rx="6"/><path class="ui" d="M266 182h44M266 200h68M266 214h56M266 228h62M266 242h48"/><rect class="btn" x="266" y="300" width="68" height="16" rx="4"/></g>
+      <g class="f-nodes"><circle cx="100" cy="150" r="18"/><rect x="462" y="160" width="40" height="36" rx="4"/><rect x="480" y="312" width="50" height="40" rx="3"/><ellipse cx="410" cy="452" rx="24" ry="20"/><path d="M116 374l16 16-16 16-16-16z"/></g>
+      <g class="f-labels"><text x="100" y="196" text-anchor="middle">Użytkownik</text><text x="300" y="138" text-anchor="middle">Mobile</text><text x="482" y="146" text-anchor="middle">API</text><text x="505" y="300" text-anchor="middle">Comarch ERP</text><text x="410" y="500" text-anchor="middle">SQL</text><text x="116" y="426" text-anchor="middle">Proces</text></g>
+    </svg>
+    <div class="stage-vignette"></div>
+  </div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#top" aria-label="Dariusz Masłyk — początek strony">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 16 16 4l12 12-12 12Z"/><path d="M10 16h12M16 10v12"/></svg>
+      <span>Dariusz Masłyk</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav" aria-label="Sekcje strony">
+      <a href="#historia">Jak pracuję</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#projekty">Projekty</a>
+      <a href="#kariera">Kariera</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-small btn-cv" href="assets/Dariusz_Maslyk_CV.pdf" download data-bind="cv">Pobierz CV</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 1. OTWARCIE -->
+    <section class="intro" id="top" aria-labelledby="intro-h">
+      <div class="intro-copy">
+        <h1 id="intro-h">
+          <span class="intro-name" data-bind="name">Dariusz Masłyk</span>
+          <span class="intro-statement" data-bind="statement">Od chaosu wymagań do systemu.</span>
+        </h1>
+        <p class="intro-lead" data-bind="lead">Łączę potrzeby biznesu z rozwiązaniami technicznymi — od analizy wymagań i koncepcji, przez współpracę z zespołem deweloperskim, po testy i diagnostykę integracji.</p>
+        <div class="intro-cta">
+          <a class="btn btn-primary" href="#historia">Zobacz, jak pracuję <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-glass" href="#projekty">Projekty</a>
+          <a class="btn btn-glass" href="assets/Dariusz_Maslyk_CV.pdf" download data-bind="cv">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10m-4-4 4 4 4-4M4 16h12"/></svg>CV (PDF)
+          </a>
+        </div>
+      </div>
+      <ol class="facts" id="facts" aria-label="Najważniejsze fakty"></ol>
+    </section>
+
+    <!-- 2. HISTORIA (scrollytelling) -->
+    <section class="story" id="historia" aria-labelledby="story-h">
+      <header class="story-head">
+        <h2 id="story-h">Jak pracuję, krok po kroku</h2>
+      </header>
+      <div class="chapters" id="chapters"></div>
+      <div class="story-progress" id="story-progress" aria-hidden="true"></div>
+    </section>
+
+    <!-- 3. MAPA POWIĄZAŃ -->
+    <section class="section" id="mapa" aria-labelledby="map-h">
+      <header class="section-head">
+        <h2 id="map-h">Skąd biorą się moje kompetencje</h2>
+        <p class="section-sub">Najedź albo wybierz element, żeby zobaczyć ścieżkę: doświadczenie → kompetencja → projekt.</p>
+      </header>
+      <div class="map-wrap">
+        <div class="map" id="map"></div>
+        <aside class="map-panel" id="map-panel" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <!-- 4. TECZKI PROJEKTÓW -->
+    <section class="section" id="projekty" aria-labelledby="cases-h">
+      <header class="section-head">
+        <h2 id="cases-h">Wybrane projekty</h2>
+        <p class="section-sub">Cztery inicjatywy z pracy dla Comarch Mobile. Opis zakresu pochodzi z CV. Karty w teczce pokazują typy artefaktów, jakie analityk przygotowuje w takim projekcie. To <strong>ilustracje</strong>, nie poufna dokumentacja.</p>
+      </header>
+      <div class="cases" id="cases"></div>
+    </section>
+
+    <!-- 5. LINIA KARIERY -->
+    <section class="section" id="kariera" aria-labelledby="metro-h">
+      <header class="section-head">
+        <h2 id="metro-h">Trzy linie, jedna stacja docelowa</h2>
+        <p class="section-sub">Handel, magazyn i logistyka zbiegają się w 2022 roku w analizie systemowej. Dlatego znam procesy, które aplikacje mają wspierać, od strony ich użytkownika.</p>
+      </header>
+      <div class="metro-scroll"><div class="metro" id="metro"></div></div>
+      <div class="skills" id="skills"></div>
+    </section>
+
+    <!-- 7. KONTAKT -->
+    <section class="section contact" id="kontakt" aria-labelledby="contact-h">
+      <h2 id="contact-h" class="contact-h">Porozmawiajmy o Twoim systemie</h2>
+      <div class="contact-grid">
+        <figure class="contact-photo"><img src="assets/dariusz-maslyk.jpg" alt="Dariusz Masłyk" width="640" height="640" loading="lazy"></figure>
+        <div class="contact-cta">
+          <a class="btn btn-primary btn-large" href="mailto:d.maslyk@onet.eu" data-bind="emailCta">Napisz: d.maslyk@onet.eu</a>
+          <a class="btn btn-glass btn-large" href="assets/Dariusz_Maslyk_CV.pdf" download data-bind="cv">Pobierz CV (PDF)</a>
+        </div>
+        <dl class="contact-list">
+          <div><dt>Lokalizacja</dt><dd data-bind="city">Lublin</dd></div>
+          <div><dt>Telefon</dt><dd><a href="tel:+48791781843" data-bind="phone">+48 791 781 843</a></dd></div>
+          <div><dt>E-mail</dt><dd><a href="mailto:d.maslyk@onet.eu" data-bind="email">d.maslyk@onet.eu</a></dd></div>
+          <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/dariusz-maslyk" data-bind="linkedin" rel="noopener" target="_blank">Dariusz Masłyk</a></dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© Dariusz Masłyk</span>
+    <p class="credits" id="credits"></p>
+    <a href="#top">Do góry ↑</a>
+  </footer>
+</body>
+</html>
